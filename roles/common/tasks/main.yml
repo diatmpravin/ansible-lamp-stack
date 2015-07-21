@@ -1,0 +1,7 @@
+- name: System - Install base packages
+  apt: pkg={{item}} state=present
+  sudo: yes
+  with_items:
+    - git
+    - screen
+    - traceroute
